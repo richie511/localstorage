@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<body>
+
+
+<script type='text/javascript'>
+
+function set()
+{
+var textToWrite = document.getElementById("nomor_hp").value;
+window.localStorage.setItem("Key", textToWrite);
+window.sessionStorage.setItem("Key", "081378285855");
+}
+function get()
+{
+var ani = window.localStorage.getItem("Key");
+var ina = window.sessionStorage.getItem("Key");
+alert(ani);
+alert(ina);
+}
+
+</script>
+<input id="nomor_hp" type="text">
+<button onclick="set()">Save Text </button>
+<button onclick="get()">Get Text </button>
+</body>
+</html>
